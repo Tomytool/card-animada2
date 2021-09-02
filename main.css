@@ -10,6 +10,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   width: 100vw;
   height: 100vh;
 }
@@ -64,4 +65,10 @@ body .card .card__texto .boton a {
   opacity: 1;
   transition: opacity 0.1s;
   transition-delay: 1s;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    margin-top: 70px;
+  }
 }/*# sourceMappingURL=main.css.map */
