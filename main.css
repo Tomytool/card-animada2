@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: #d5ddbc;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+body .card {
+  position: relative;
+  width: 300px;
+  height: 280px;
+  box-shadow: 4px 4px 10px;
+  border-radius: 12px;
+}
+body .card .card__imagen {
+  position: absolute;
+  width: 250px;
+  height: 198px;
+  left: calc(50% - 250px / 2);
+  bottom: 82px;
+}
+body .card .card__imagen img {
+  width: 100%;
+}
+body .card .card__texto {
+  position: absolute;
+  width: 226px;
+  height: 119px;
+  left: 37px;
+  top: 146px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+}
+body .card .card__texto .boton,
+body .card .card__texto h2,
+body .card .card__texto p {
+  margin-top: 5px;
+}
+body .card .card__texto .boton {
+  align-self: center;
+}
+body .card .card__texto .boton a {
+  background: #1b2555;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 2px 19px;
+  color: white;
+}
+
+.card:hover img {
+  transform: translate(0px, -60px);
+  transition: transform 2s;
+}
+.card:hover .card__texto {
+  opacity: 1;
+  transition: opacity 0.1s;
+  transition-delay: 1s;
+}/*# sourceMappingURL=main.css.map */
